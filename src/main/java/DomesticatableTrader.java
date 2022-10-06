@@ -5,7 +5,7 @@
 
 import java.util.List;
 
-class DomesticatableTrader extends Trader<Domesticatable> {
+abstract class DomesticatableTrader extends Trader<Domesticatable> {
     /**
      * Construct a DomesticatableTrader, giving them the
      * given inventory, wishlist, and money.

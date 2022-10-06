@@ -15,7 +15,7 @@ public class DrivableTraderTest {
     public void TestGetSellingPrice() {
         Horse h = new Horse();
         Unicorn u = new Unicorn();
-        assertEquals(11, dt.getSellingPrice(h));
+        assertEquals(11, dt.getSellingPrice((Drivable) h));
         assertEquals(Tradable.MISSING_PRICE, dt.getSellingPrice(u));
     }
 
@@ -23,6 +23,6 @@ public class DrivableTraderTest {
     public void TestGetSellingPriceVaryingSpeed() {
         Horse h = new Horse();
         h.upgradeSpeed();
-        assertEquals(12, dt.getSellingPrice(h));
+        assertEquals(12, dt.getSellingPrice((Drivable) h));
     }
 }

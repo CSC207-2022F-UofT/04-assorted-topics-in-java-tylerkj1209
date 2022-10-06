@@ -33,7 +33,7 @@ public class TraderTest {
     public void TestGetSellingPrice() {
         Horse h = new Horse();
         Unicorn u = new Unicorn();
-        assertEquals(10, trader.getSellingPrice(h));
+        assertEquals(10, trader.getSellingPrice((Drivable) h));
         assertEquals(Tradable.MISSING_PRICE, trader.getSellingPrice(u));
     }
 }
